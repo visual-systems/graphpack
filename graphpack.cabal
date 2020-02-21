@@ -1,0 +1,41 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 669abdf070ab4715cdd0345026c08dad1d1234b4e8af0737b92efc2959a80279
+
+name:           graphpack
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/sordina/graphpack#readme
+author:         Lyndon
+maintainer:     lyndon@sordina.net
+copyright:      Lyndon, 2019
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable graphpack
+  main-is: Main.hs
+  other-modules:
+      Paths_graphpack
+  hs-source-dirs:
+      src
+  build-depends:
+      aeson
+    , atto-lisp
+    , attoparsec
+    , base >=4.7 && <5
+    , bytestring
+    , fgl
+    , graphviz
+    , microlens
+    , microlens-mtl
+    , mtl
+    , text
+    , vector
+  default-language: Haskell2010

@@ -1,0 +1,31 @@
+name:                graphpack
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/sordina/graphpack#readme
+license:             BSD3
+author:              Lyndon
+maintainer:          lyndon@sordina.net
+copyright:           Lyndon, 2019
+category:            Web
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - atto-lisp
+  - fgl
+  - graphviz
+  - text
+  - attoparsec
+  - mtl
+  - microlens
+  - microlens-mtl
+  - aeson
+  - bytestring
+  - vector
+
+executables:
+  graphpack:
+    source-dirs:      src
+    main:             Main.hs
