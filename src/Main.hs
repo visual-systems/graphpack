@@ -48,7 +48,7 @@ go prog = do
   -- putStrLn ""
   -- BL.putStrLn "Program:"
   let g = Atto.parse lisp prog
-  print g
+  -- print g
   case g of
     Done _i r -> do
       putStrLn ""
