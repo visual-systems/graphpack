@@ -37,13 +37,16 @@ program2 = "(first 1000 (shuffle (outer-join-on-images (select-classes (animals 
 
 main :: IO ()
 main = do
-  go program1
-  go program2
+  -- go program1
+  -- go program2
+
+  program <- B.getContents
+  go program
 
 go :: B.ByteString -> IO ()
 go prog = do
-  putStrLn ""
-  BL.putStrLn "Program:"
+  -- putStrLn ""
+  -- BL.putStrLn "Program:"
   let g = Atto.parse lisp prog
   print g
   case g of
